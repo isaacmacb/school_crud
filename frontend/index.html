@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão Escolar</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Professor</h2>
+            <form id="professor-form">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="disciplina" placeholder="Disciplina" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Professores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Disciplina</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="professor-list">
+                    <!-- Os professores serão carregados aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
