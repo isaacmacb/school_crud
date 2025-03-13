@@ -11,7 +11,7 @@ class Aluno {
     return result.rows[0];
   }
 
-  static async create(nome, nome, data_nascimento, serie) {
+  static async create(nome, data_nascimento, serie) {
     const result = await pool.query(
       'INSERT INTO alunos (nome, data_nascimento, serie) VALUES ($1, $2, $3) RETURNING *',
       [nome, data_nascimento, serie]
