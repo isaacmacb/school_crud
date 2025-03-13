@@ -1,44 +1,31 @@
 # School_Crud
 
-Este repositório contém um sistema CRUD desenvolvido para escolas, permitindo o gerenciamento eficiente de alunos, professores e disciplinas.
+O **School_Crud** é um sistema CRUD (Create, Read, Update, Delete) desenvolvido para a gestão de escolas. Ele oferece funcionalidades para gerenciar alunos, professores, disciplinas e pagamentos de forma simples e eficiente, com integração com banco de dados e uma interface web para interação.
 
 ## Objetivo
 
-O objetivo do Schoo CRUD é oferecer uma solução simples e eficaz para a administração de instituições de ensino, possibilitando:
+O **School_Crud** visa proporcionar uma solução intuitiva para a administração escolar, permitindo que os gestores possam:
 
--Cadastro, edição e remoção de alunos, -professores e disciplinas.
--Consulta de registros de forma organizada.
--Autenticação e controle de acesso (opcional).
+- **Cadastrar**, **editar** e **remover** registros de **alunos**, **professores** e **disciplinas**.
+- **Consultar** registros de maneira organizada e eficiente.
+- Possibilitar a **integração com o banco de dados** para o armazenamento seguro das informações.
 
-Integração com bancos de dados para armazenamento seguro das informações.
+Além disso, o sistema pode ser expandido para incluir **autenticação e controle de acesso** (opcional).
 
 ## Tecnologias Utilizadas
 
-1. Back-end
+### 1. **Back-End**
 
--Node.js com Express para criação da API.
--PostgreSQL para gerenciamento do banco de dados.
--Sequelize para ORM e migração de dados.
+- **Node.js**: Utilizado para construir a API.
+- **Express**: Framework que facilita a criação das rotas da API.
+- **PostgreSQL**: Banco de dados relacional utilizado para armazenar as informações da escola.
+- **Sequelize (ORM)**: Facilita a comunicação entre o Node.js e o banco de dados, abstraindo as queries SQL.
 
-2. Front-end
+### 2. **Front-End**
 
--HTML, CSS e JavaScript para estilização e interatividade.
+- **HTML**: Estruturação da interface do usuário.
+- **CSS**: Estilização e layout da aplicação.
+- **JavaScript**: Tornando a aplicação interativa, carregando dados dinâmicos através de requisições à API.
 
 
-### Estrutura do Projeto**
-- **A organização do código segue a estrutura:**: 
 
-/schoo_crud
-│-- /backend
-│   ├── models/          # Modelos do banco de dados
-│   ├── controllers/     # Lógica dos endpoints
-│   ├── routes/         # Definição das rotas
-│   ├── config/         # Configuração do banco de dados
-│   └── server.js       # Inicialização do servidor
-│-- /frontend
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── index.js
-│-- .env
-│-- README.md
