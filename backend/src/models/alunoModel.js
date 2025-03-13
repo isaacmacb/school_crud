@@ -11,18 +11,18 @@ class Aluno {
     return result.rows[0];
   }
 
-  static async create(nome, idade, turma) {
+  static async create(nome, nome, data_nascimento, serie) {
     const result = await pool.query(
-      'INSERT INTO alunos (nome, idade, turma) VALUES ($1, $2, $3) RETURNING *',
-      [nome, idade, turma]
+      'INSERT INTO alunos (nome, data_nascimento, serie) VALUES ($1, $2, $3) RETURNING *',
+      [nome, data_nascimento, serie]
     );
     return result.rows[0];
   }
 
-  static async update(id, nome, idade, turma) {
+  static async update(id, nome, data_nascimento, serie) {
     const result = await pool.query(
       'UPDATE alunos SET nome = $1, idade = $2, turma = $3 WHERE id = $4 RETURNING *',
-      [nome, idade, turma, id]
+      [nome, data_nascimento, serie, id]
     );
     return result.rows[0];
   }
